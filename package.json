@@ -13,7 +13,7 @@
     "bencode": "^0.7.0",
     "block-stream2": "^1.0.0",
     "filestream": "^4.0.0",
-    "flatten": "0.0.1",
+    "flatten": "1.0.2",
     "is-file": "^1.0.0",
     "junk": "^1.0.1",
     "minimist": "^1.1.0",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "brfs": "^1.1.2",
     "parse-torrent": "^5.0.0",
-    "standard": "^5.0.2",
+    "standard": "^6.0.4",
     "tape": "^4.0.0",
     "zuul": "^3.0.0"
   },
