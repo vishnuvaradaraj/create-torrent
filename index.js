@@ -412,8 +412,17 @@ function sumLength (sum, file) {
  * @param  {*} obj
  * @return {boolean}
  */
+function isFile (obj) {
+  return typeof File !== 'undefined' && obj instanceof File
+}
+
+/**
+ * Check if `obj` is a W3C `Blob` object (which `File` inherits from)
+ * @param  {*} obj
+ * @return {boolean}
+ */
 function isBlob (obj) {
-  return typeof Blob !== 'undefined' && obj instanceof Blob
+  return (isFile(obj) || (typeof Blob !== 'undefined' && obj instanceof Blob))
 }
 
 /**
