@@ -412,7 +412,7 @@ function sumLength (sum, file) {
  * @param  {*} obj
  * @return {boolean}
  */
-function isFile (obj) {
+function isAnyFile (obj) {
   return typeof File !== 'undefined' && obj instanceof File
 }
 
@@ -422,7 +422,7 @@ function isFile (obj) {
  * @return {boolean}
  */
 function isBlob (obj) {
-  return (isFile(obj) || (typeof Blob !== 'undefined' && obj instanceof Blob))
+  return (isAnyFile(obj) || (typeof Blob !== 'undefined' && obj instanceof Blob))
 }
 
 /**
